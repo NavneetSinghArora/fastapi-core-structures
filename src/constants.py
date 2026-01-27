@@ -41,3 +41,6 @@ LLM_PROVIDERS = [
         "models": ["gpt-2", "gpt-2-medium", "gpt-2-large", "gpt-2-xl"],
     },
 ]
+
+
+SQLITE_DATABASE_URL = "sqlite:///./default.db"

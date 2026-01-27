@@ -1,5 +1,5 @@
 # Set target python version
-target-version = "py314"
+target-version = "py312"
 
 # Set the maximum line length to 180 characters
 line-length = 120
@@ -11,8 +11,8 @@ respect-gitignore = true
 indent-width = 4
 
 [lint]
-# Enable pycodestyle (E) and Pyflakes (F)
-select = ["E", "F"]
+# Enable pycodestyle (E), Pyflakes (F) and isort (I)
+select = ["E", "F", "I"]
 
 
 # Extending the rules

@@ -1,0 +1,24 @@
+repos:
+
+  # uv pre-commit hook to ensure that uv.lock is always up to date and matches pyproject.toml
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    # uv version.
+    rev: 0.9.26
+    hooks:
+      - id: uv-lock
+
+  # ruff pre-commit hook to ensure that the code is formatted and free of linting errors
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.13
+    hooks:
+      - id: ruff-check
+        args: [--fix, --exit-non-zero-on-fix]
+      - id: ruff-format
+
+  - repo: https://github.com/facebook/pyrefly-pre-commit
+    rev: 0.48.2  # Note: this is the version of the pre-commit hook, NOT the pyrefly version used for type checking
+    hooks:
+      - id: pyrefly-check
+        name: Pyrefly (type checking)
+        pass_filenames: false  # Recommended to do full repo checks. However, you can change this to `true` to only check changed files
+        language: system  # Use system-installed pyrefly
