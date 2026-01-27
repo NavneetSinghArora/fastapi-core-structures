@@ -1,3 +1,5 @@
+"""This module contains constants for the application."""
+
 LLM_PROVIDERS = [
     {
         "name": "OpenAI",
