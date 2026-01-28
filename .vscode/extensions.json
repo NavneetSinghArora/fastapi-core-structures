@@ -5,6 +5,7 @@
         "meta.pyrefly",
         "charliermarsh.ruff",
         "tamasfe.even-better-toml",
-        "aaron-bond.better-comments"
+        "aaron-bond.better-comments",
+        "qwtel.sqlite-viewer"
     ]
 }
